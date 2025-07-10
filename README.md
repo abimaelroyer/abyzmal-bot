@@ -19,7 +19,7 @@ git clone [repository-url]
 # install dependencies
 pip install -U discord.py python-dotenv
 
-# Configuration
+# configuration
 Create a .env file in the project root:
 
 DISCORD_TOKEN=your_discord_bot_token
