@@ -1,0 +1,645 @@
+
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Art",
+    "question": "Who painted the Mona Lisa?",
+    "correct_answer": "Leonardo da Vinci",
+    "incorrect_answers": ["Vincent van Gogh", "Pablo Picasso", "Michelangelo"]
+  },
+
+
+
+
+  
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Food & Drink",
+    "question": "What popular ice cream flavor is typically made with crushed cookies?",
+    "correct_answer": "Cookies and Cream",
+    "incorrect_answers": ["Chocolate Chip", "Mint Chocolate", "Vanilla"]
+  },
+
+
+
+
+
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What is the largest mammal in the world?",
+    "correct_answer": "Blue whale",
+    "incorrect_answers": ["Elephant", "Giraffe", "Hippopotamus"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What is a term for a group of flamingos?",
+    "correct_answer": "A flamboyance",
+    "incorrect_answers": ["A colony", "A pack", "A herd"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What is Japan's national currency?",
+    "correct_answer": "Yen",
+    "incorrect_answers": ["Won", "Dollar", "Euro"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What's the shortcut for the 'copy' function on most computers?",
+    "correct_answer": "Ctrl + C",
+    "incorrect_answers": ["Ctrl + V", "Ctrl + X", "Ctrl + Z"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "How many cards are in a standard deck of playing cards?",
+    "correct_answer": "52",
+    "incorrect_answers": ["48", "54", "50"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What is the name for the plastic or metal tube found on the ends of shoelaces?",
+    "correct_answer": "Aglet",
+    "incorrect_answers": ["Ferrule", "Eyelet", "Grommet"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "In computing, what does 'CPU' stand for?",
+    "correct_answer": "Central Processing Unit",
+    "incorrect_answers": ["Computer Personal Unit", "Central Power Unit", "Control Processing Unit"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "What is an eight-sided shape called?",
+    "correct_answer": "Octagon",
+    "incorrect_answers": ["Hexagon", "Heptagon", "Nonagon"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "How many points does the Star of David have?",
+    "correct_answer": "6",
+    "incorrect_answers": ["5", "7", "8"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "The first iPhone was released in what year?",
+    "correct_answer": "2007",
+    "incorrect_answers": ["2005", "2008", "2010"]
+  },
+  
+
+
+
+
+  
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "What is the name of the largest ocean in the world?",
+    "correct_answer": "Pacific Ocean",
+    "incorrect_answers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "What is the capital city of Brazil?",
+    "correct_answer": "Brasília",
+    "incorrect_answers": ["Rio de Janeiro", "São Paulo", "Salvador"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "Which country is the largest in the world?",
+    "correct_answer": "Russia",
+    "incorrect_answers": ["Canada", "China", "United States"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "Aside from the Nile, what is the longest river in the world?",
+    "correct_answer": "Amazon River",
+    "incorrect_answers": ["Yangtze River", "Mississippi River", "Congo River"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "Which ocean name loosely translates into “Sea of Atlas?”",
+    "correct_answer": "Atlantic Ocean",
+    "incorrect_answers": ["Pacific Ocean", "Indian Ocean", "Arctic Ocean"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "What is the world's most populated city?",
+    "correct_answer": "Tokyo, Japan",
+    "incorrect_answers": ["Shanghai, China", "Delhi, India", "São Paulo, Brazil"]
+  },
+  
+
+
+
+
+  
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "In what year did the Titanic sink?",
+    "correct_answer": "1912",
+    "incorrect_answers": ["1905", "1920", "1898"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Dubbed the “Black Death,” what plague swept through Europe in the 1300s?",
+    "correct_answer": "The Bubonic Plague",
+    "incorrect_answers": ["Smallpox", "Cholera", "Spanish Flu"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "The “Treaty of Paris” ended which war?",
+    "correct_answer": "The American Revolutionary War",
+    "incorrect_answers": ["The War of 1812", "The French and Indian War", "The Napoleonic Wars"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Who did the U.S. purchase the Louisiana Territory from?",
+    "correct_answer": "France",
+    "incorrect_answers": ["Spain", "Britain", "Portugal"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Which military leader conquered the Persian Empire, India, and Egypt, among others, to become one of the greatest conquerors of all time?",
+    "correct_answer": "Alexander the Great",
+    "incorrect_answers": ["Genghis Khan", "Julius Caesar", "Napoleon Bonaparte"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Which leader is considered to be the founder of the Roman Empire?",
+    "correct_answer": "Augustus",
+    "incorrect_answers": ["Julius Caesar", "Nero", "Marcus Aurelius"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "In 1863, what memorable speech did Abraham Lincoln give during the dedication of the Soldiers’ National Cemetery?",
+    "correct_answer": "The Gettysburg Address",
+    "incorrect_answers": ["The Emancipation Proclamation", "The Declaration of Independence", "The Monroe Doctrine"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "What pioneering English woman is considered the founder of modern nursing?",
+    "correct_answer": "Florence Nightingale",
+    "incorrect_answers": ["Mary Seacole", "Clara Barton", "Dorothea Dix"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Which U.S. Constitution amendment provides for freedom of speech, religion, and the press?",
+    "correct_answer": "First Amendment",
+    "incorrect_answers": ["Second Amendment", "Fifth Amendment", "Tenth Amendment"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "By what name were the Egyptian kings/rulers known?",
+    "correct_answer": "Pharaohs",
+    "incorrect_answers": ["Kings", "Emperors", "Sultans"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "How many Pyramids of Giza were made?",
+    "correct_answer": "Three",
+    "incorrect_answers": ["One", "Five", "Seven"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Which queen was Julius Caesar involved with?",
+    "correct_answer": "Cleopatra",
+    "incorrect_answers": ["Nefertiti", "Hatshepsut", "Elizabeth I"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Where did the Franks settle after defeating the Romans?",
+    "correct_answer": "Gaul",
+    "incorrect_answers": ["Britain", "Hispania", "Italy"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "How long did the Middle Ages last?",
+    "correct_answer": "About 1000 years",
+    "incorrect_answers": ["About 500 years", "About 2000 years", "About 150 years"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Which religion dominated the Middle Ages?",
+    "correct_answer": "Catholicism",
+    "incorrect_answers": ["Islam", "Buddhism", "Judaism"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "In which year did World War I begin?",
+    "correct_answer": "1914",
+    "incorrect_answers": ["1918", "1939", "1905"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "In which country was Adolf Hitler born?",
+    "correct_answer": "Austria",
+    "incorrect_answers": ["Germany", "Poland", "Hungary"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "John F. Kennedy was assassinated in which city?",
+    "correct_answer": "Dallas",
+    "incorrect_answers": ["Washington D.C.", "New York", "Chicago"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "On Sunday 18th June 1815, which famous battle took place?",
+    "correct_answer": "The Battle of Waterloo",
+    "incorrect_answers": ["The Battle of Hastings", "The Battle of Gettysburg", "The Battle of Agincourt"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "What event marked the beginning of World War I?",
+    "correct_answer": "The assassination of Archduke Franz Ferdinand",
+    "incorrect_answers": ["The bombing of Pearl Harbor", "The Treaty of Versailles", "The invasion of Poland"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "Who was the leader of the Soviet Union during World War II?",
+    "correct_answer": "Joseph Stalin",
+    "incorrect_answers": ["Vladimir Lenin", "Nikita Khrushchev", "Leon Trotsky"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "What ancient wonder was located in the city of Alexandria in Egypt?",
+    "correct_answer": "The Lighthouse of Alexandria",
+    "incorrect_answers": ["The Great Pyramid", "The Statue of Zeus", "The Colossus of Rhodes"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "What was the name of the ship that brought the Pilgrims to America in 1620?",
+    "correct_answer": "The Mayflower",
+    "incorrect_answers": ["The Santa Maria", "The Beagle", "The Endeavour"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "History",
+    "question": "What was the name of the series of programs and projects President Franklin D. Roosevelt enacted during the Great Depression?",
+    "correct_answer": "The New Deal",
+    "incorrect_answers": ["The Fair Deal", "The Square Deal", "The Great Society"]
+  },
+
+  
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Literature",
+    "question": "Which famous play features a character named Romeo?",
+    "correct_answer": "Romeo and Juliet",
+    "incorrect_answers": ["Hamlet", "Macbeth", "Othello"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Literature",
+    "question": "According to Guinness World Records, what's the best-selling book of all time?",
+    "correct_answer": "The Bible",
+    "incorrect_answers": ["The Lord of the Rings", "Harry Potter and the Philosopher's Stone", "The Little Prince"]
+  },
+
+
+
+
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Movies & TV Shows",
+    "question": "Anna, Elsa, Kristoff, and Olaf are all characters in what animated movie?",
+    "correct_answer": "Frozen",
+    "incorrect_answers": ["Tangled", "Moana", "Brave"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Movies & TV Shows",
+    "question": "What 1997 movie features Will Smith and Tommy Lee Jones as undercover secret agents who police extraterrestrials?",
+    "correct_answer": "Men in Black",
+    "incorrect_answers": ["Independence Day", "The Fifth Element", "Galaxy Quest"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Movies & TV Shows",
+    "question": "What was the name of the actor who played Jack Dawson in Titanic?",
+    "correct_answer": "Leonardo DiCaprio",
+    "incorrect_answers": ["Brad Pitt", "Tom Cruise", "Johnny Depp"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Movies & TV Shows",
+    "question": "Cillian Murphy plays a 1900s mob boss in Birmingham, England in which streaming series?",
+    "correct_answer": "Peaky Blinders",
+    "incorrect_answers": ["The Crown", "Breaking Bad", "The Sopranos"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Movies & TV Shows",
+    "question": "Which popular TV show featured House Targaryen and House Stark?",
+    "correct_answer": "Game of Thrones",
+    "incorrect_answers": ["The Witcher", "Vikings", "The Mandalorian"]
+  },
+
+  
+
+
+
+
+  
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "What famous music group was John Lennon a part of before pursuing a solo career?",
+    "correct_answer": "The Beatles",
+    "incorrect_answers": ["The Rolling Stones", "The Who", "Pink Floyd"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "Before embarking on a solo career, Beyoncé was part of what R&B group?",
+    "correct_answer": "Destiny's Child",
+    "incorrect_answers": ["TLC", "En Vogue", "SWV"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "Who wrote “The Star-Spangled Banner”?",
+    "correct_answer": "Francis Scott Key",
+    "incorrect_answers": ["John Philip Sousa", "Irving Berlin", "George M. Cohan"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "What song did Paul McCartney pen for John Lennon’s son, Julian?",
+    "correct_answer": "Hey Jude",
+    "incorrect_answers": ["Let It Be", "Yesterday", "Imagine"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "What are the first names of the five brothers that made up the Jackson 5?",
+    "correct_answer": "Jermaine, Marlon, Jackie, Tito and Michael",
+    "incorrect_answers": [
+      "Jermaine, Marlon, Jackie, Tito and Randy",
+      "Jermaine, Marlon, Jackie, Tito and Jerold",
+      "Jermaine, Marlon, Jackie, Tito and Jermain"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "How many Billboard #1 hits did Elvis have?",
+    "correct_answer": "18",
+    "incorrect_answers": ["15", "20", "22"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "What’s the best-selling Christmas single of all time?",
+    "correct_answer": "White Christmas by Bing Crosby",
+    "incorrect_answers": ["Jingle Bells", "All I Want For Christmas Is You", "Last Christmas"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "Which singer’s real name is Robyn Fenty?",
+    "correct_answer": "Rihanna",
+    "incorrect_answers": ["Beyoncé", "Adele", "Lady Gaga"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "What year did MTV launch?",
+    "correct_answer": "1981",
+    "incorrect_answers": ["1978", "1984", "1990"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "When was Mariah Carey’s “All I Want For Christmas Is You” released?",
+    "correct_answer": "October 1994",
+    "incorrect_answers": ["December 1994", "October 1992", "November 1995"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "Who was the first woman ever inducted into the Rock and Roll Hall of Fame?",
+    "correct_answer": "Aretha Franklin",
+    "incorrect_answers": ["Janis Joplin", "Tina Turner", "Patti Smith"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Music",
+    "question": "Which musical legend is Jay-Z married to?",
+    "correct_answer": "Beyoncé",
+    "incorrect_answers": ["Rihanna", "Nicki Minaj", "Alicia Keys"]
+  },
+
+
+  
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What animals are pearls found in?",
+    "correct_answer": "Oysters",
+    "incorrect_answers": ["Clams", "Mussels", "Snails"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What do bees collect to make honey?",
+    "correct_answer": "Nectar",
+    "incorrect_answers": ["Pollen", "Water", "Sap"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What is the chemical symbol for silver?",
+    "correct_answer": "Ag",
+    "incorrect_answers": ["Si", "Au", "Pb"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What is meteorology the study of?",
+    "correct_answer": "Weather",
+    "incorrect_answers": ["Stars", "Oceans", "Plants"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What occasion corresponds with the longest day of the year?",
+    "correct_answer": "Summer Solstice",
+    "incorrect_answers": ["Winter Solstice", "Equinox", "Daylight Saving Time"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "Which planet is the hottest in the solar system?",
+    "correct_answer": "Venus",
+    "incorrect_answers": ["Mercury", "Mars", "Jupiter"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "Which natural disaster is measured with a Richter scale?",
+    "correct_answer": "Earthquakes",
+    "incorrect_answers": ["Hurricanes", "Tornadoes", "Floods"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "Which planet has the most gravity?",
+    "correct_answer": "Jupiter",
+    "incorrect_answers": ["Saturn", "Earth", "Neptune"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "How many degrees are in a circle?",
+    "correct_answer": "360",
+    "incorrect_answers": ["180", "90", "100"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "Which blood type is a universal donor?",
+    "correct_answer": "O Negative",
+    "incorrect_answers": ["A Positive", "B Negative", "AB Positive"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "How many moons does Neptune have?",
+    "correct_answer": "14",
+    "incorrect_answers": ["8", "10", "16"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What is the largest bone in the human body?",
+    "correct_answer": "Femur",
+    "incorrect_answers": ["Humerus", "Tibia", "Pelvis"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "What is the fear of flowers called?",
+    "correct_answer": "Anthophobia",
+    "incorrect_answers": ["Arachnophobia", "Claustrophobia", "Acrophobia"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Math & Science",
+    "question": "How many colors are in a rainbow?",
+    "correct_answer": "Seven",
+    "incorrect_answers": ["Five", "Six", "Eight"]
+  }
+]

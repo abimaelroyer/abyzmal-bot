@@ -1,0 +1,80 @@
+{
+  "roadmap": [
+    {
+      "version": "0.5 BETA",
+      "focus": "Twitch Integration",
+      "items": [
+        "~~Server notifications when streamers go live.~~",
+        "Custom stream notifications for each streamer in a server",
+        "Stream schedule reminders",
+        "~~!!twitchInfo~~",
+        "Basic Twitch statistic commands.",
+        "Twitch clip sharing. VOD and highlight Clips",
+        "Subscriber and follower auto-role/tag.",
+        "Polls"
+      ]
+    },
+    {
+      "version": "0.6 BETA",
+      "focus": "AI Chat Bot Integration",
+      "items": [
+        "Chat mode channel or DMs for lightweight Q&A and small talk — users can ask general questions or have casual conversations with the bot.",
+        "Owner-tunable personality/settings — allow server owners to customize bot tone, humor level, verbosity, and preferred response style.",
+      "  - Story writing: Collaborate with the bot to write short stories or creative prompts.",
+        "AI-generated art: Create and share images based on user prompts.",
+        "Safety filters — detect inappropriate content or prevent spamming of AI-generated responses.",
+        "Context awareness — retain temporary context in conversation for multi-turn discussions."
+      ]
+    },
+    {
+      "version": "0.7 BETA",
+      "focus": "Moderation & Role Management",
+      "items": [
+        "Core mod commands: ban, kick, mute, warn, purge.",
+        "Auto-mod basics (anti-spam/links).",
+        "  - Keyword filter: Auto-delete offensive words or phrases.",
+        "Level-based auto-roles; reaction/select-menu roles.",
+        "Moderation/action logs.",
+        "Reaction roles: Members can react to messages to get roles.",
+        "Select-menu roles: Members can select roles from a dropdown menu.",
+        "Role management: Create, delete, and manage roles with ease."
+      ]
+    },
+    {
+      "version": "0.8 BETA",
+      "focus": "Community Engagement",
+      "items": [
+        "XP boosts for events and milestones",
+        "Enhanced polls and voting systems",
+        "Schedule events and reminders",
+        "Server specfic text commands",
+        "Server specific welcome messages",
+        "Server Specific response styles and embeds",
+        "Birthday reminders, anniversaries, and special days"
+      ]
+    },
+    {
+      "version": "0.9 BETA",
+      "focus": "Multi-Server Architecture",
+      "items": [
+        "Per-server configs — server owners can customize bot settings individually, including command prefix, XP gain rates, perks, and role assignments.",
+        "Database schema refactor — all guild-specific data is now isolated, allowing the bot to safely operate across multiple servers without conflicts.",
+        "Config command suite — new commands like `!!setprefix`, `!!setxp`, `!!setperks`, and `!!setchannel` allow server owners to manage server-specific settings easily.",
+      "Command/channel restrictions — commands that require specific channels can now be bound per server using configuration settings.",
+        "Permissions and access control — enhanced role-based checks to ensure only authorized users can modify server-specific settings.",
+        "Testing and stability improvements — verified bot functionality in multiple servers to prevent cross-server data leaks or command collisions."
+
+      ]
+    },
+    {
+      "version": "1.0 RELEASE",
+      "focus": "Production Ready (24/7, Multi-Server)",
+      "items": [
+        "Stable hosting (VPS/cloud) with uptime monitoring.",
+        "Public invite + permission screen.",
+        "Docs/onboarding; optional lightweight web dashboard.",
+        "Performance/bug fixes and long-term support plan."
+      ]
+    }
+  ]
+}

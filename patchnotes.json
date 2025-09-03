@@ -1,0 +1,108 @@
+{
+    "current_version": "0.4.5 BETA",
+    "lastPostedVersion": "0.4.5 BETA",
+    "notes": [
+        {
+            "version": "0.4.5 BETA",
+            "date": "2025-08-18",
+            "status": "Public Beta",
+            "announcement": "Exciting new features have been added. We are currently at a total of 25 user commands (I was shooting for 50 but I ran out of ideas.) The bot now supports interactive games like Hangman and Wordle, enhanced moderation tools, dynamic embeds, and a streamlined command system. Check them out! \n\nPlease buy me some coffee.\n\u2014 **Downer**",
+            "changes": [
+                "!!hangman: Users can now play hangman with a pool of 500 words, complete with visual hangman stages using embeds.",
+                "!!wordle: Daily Wordle that is synced with the NYT, playable in your DMS",
+                "!!inspire: Get some motivation to get you through your day",
+                "!!trivia: Interactive multiple-choice trivia across different categories. type !!trivia party to play with friends"
+            ],
+            "improvements": [
+                "Improved the embed UI, they'll be looking cleaner from now on",
+                "Help menu should be fixed and free of any issues",
+                "Fixed the !!joke, quote!!, !!inspire, and !!trivia commands by condensing them into JSON files."
+            ],
+            "fixes": [
+                "Fixed a few bugs with the !!trivia and !!trivia party commands",
+                "Fixed !!wordle showing the word if the game expired. It'll be spoiler tagged now",
+                "Fixed issues with underscores not displaying properly in Hangman."
+            ]
+        },
+        {
+            "version": "0.4 BETA",
+            "date": "2025-07-30",
+            "status": "Public Beta",
+            "announcement": "What's good y\u2019all, Downer here.\n\nA.R.I.A. just got a few new user commands for you to try out \u2014 type **!!help** and give them a shot.\n\nI\u2019ll be rolling out a handful of smaller features and commands over the next few days, so keep your eyes peeled for patch updates. The next **major** update will be **Twitch integration**: streamers in the server will be able to have A.R.I.A. announce when they go live. Stay tuned!\n\nAs always, I\u2019m open to suggestions, questions, or feedback \u2014 DM me or ping me in the server. I appreciate all the motivation you send my way.\n\nMuch love to you all.\n\u2014 **Downer**",
+            "changes": [
+                "Added `!!diceroll` (NdM dice rolling).",
+                "Added `!!coinflip`.",
+                "Added `!!avatar` (show user avatar in an embed).",
+                "Added `!!ping` (latency).",
+                "Added `!!info` (A.R.I.A. intro message).",
+                "Added `!!perks` (roles + perks embed).",
+                "Improved `!!rank` XP view with progress bar, totals, and next-level XP.",
+                "Updated `!!leaderboard` to show top users with levels.",
+                "Enhanced `!!help` to auto-list commands with usage and aliases.",
+                "Refined `!!quote` collection and presentation."
+            ],
+            "improvements": [
+                "Alphabetized user commands for cleaner organization.",
+                "Unified command aliases (e.g., hello/Hello, rank/Rank).",
+                "Consistent embed styling (author, thumbnail, footer).",
+                "Startup message pool with local New York time.",
+                "Perks data structured for easy updates (`!!perks`)."
+            ],
+            "fixes": [
+                "Resolved duplicate `help` command registration crash.",
+                "Fixed cases where embeds would not send; added safer avatar fallback.",
+                "Corrected usage hints and minor typos in messages.",
+                "Hardened error handling in XP and leaderboard commands."
+            ]
+        },
+        {
+            "version": "0.3 BETA",
+            "date": "2025-07-29",
+            "status": "Beta",
+            "announcement": "XP system introduced with Mee6-style progression and basic admin tools.",
+            "changes": [
+                "Implemented XP tracking with cooldown and random gains.",
+                "Mee6-style level curve (XP to next level scales with level).",
+                "Added `!!rank` to show level, total XP, and progress.",
+                "Added admin `!!setxp` to set a user's total XP."
+            ],
+            "improvements": [
+                "Persisted XP in SQLite via `aiosqlite`.",
+                "Added level-up notification message."
+            ],
+            "fixes": [
+                "Handled missing user rows by auto-creating entries.",
+                "General robustness on XP reads/writes."
+            ]
+        },
+        {
+            "version": "0.2 BETA",
+            "date": "2025-06-25",
+            "status": "Beta",
+            "announcement": "Welcome system for new members.",
+            "changes": [
+                "Added on-join welcome message to a designated channel.",
+                "Posted prompts in lounge to greet new members.",
+                "Assigned initial role to new members on join."
+            ],
+            "improvements": [
+                "Configurable channel/role IDs for welcome flow."
+            ],
+            "fixes": []
+        },
+        {
+            "version": "0.1 BETA",
+            "date": "2025-06-20",
+            "status": "Beta",
+            "announcement": "Initial bot creation and basic commands.",
+            "changes": [
+                "Bootstrapped bot with token via environment variable.",
+                "Added `!!hello`, `!!info`, `!!inspire`, and `!!quote`.",
+                "Basic `!!help` command."
+            ],
+            "improvements": [],
+            "fixes": []
+        }
+    ],
+    "last_posted_version": "0.4.5 BETA"
+}
