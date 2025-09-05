@@ -232,10 +232,13 @@ APIHeaders = {
 # ----------------------------
 # Twitch API Helpers
 # ----------------------------
-async def get_user_id(username: str, headers) -> str | None:
+async def get_user_id(username: str, headers: dict) -> str | None:
     url = "https://api.twitch.tv/helix/users"
     async with aiohttp.ClientSession() as session:
         async with session.get(url, headers=headers, params={"login": username}) as resp:
+            if resp.status != 200:
+                print(f"Error fetching user ID for {username}: {resp.status}")
+                return None
             data = await resp.json()
             if data.get("data"):
                 return data["data"][0]["id"]
@@ -316,39 +319,6 @@ async def check_streams_loop():
                 )
 
             last_status[guild_id][username] = is_live
-
-
-# ----------------------------
-# Clips
-# ----------------------------
-async def get_clips(username: str, headers: dict, limit: int = 5, days: int = 30) -> list[dict]:
-    """Return up to `limit` recent clips for `username` from the last `days` days."""
-    user_id = await get_user_id(username, headers)
-    if not user_id:
-        return []
-
-    started_at = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat("T") + "Z"
-
-    url = "https://api.twitch.tv/helix/clips"
-    params = {
-        "broadcaster_id": user_id,
-        "first": min(max(limit, 1), 100),
-        "started_at": started_at,
-    }
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, headers=headers, params=params) as resp:
-            if resp.status != 200:
-                print(f"Error fetching clips: {resp.status}")
-                return []
-            data = await resp.json()
-            return data.get("data", [])
-
-
-async def get_random_clip(username: str, headers: dict, days: int = 30) -> dict | None:
-    """Return a single random clip for `username` from the last `days` days."""
-    clips = await get_clips(username, headers, limit=20, days=days)
-    return random.choice(clips) if clips else None
 
 def save_settings():
     with open(os.path.join(script_dir, "serverConfigs.json"), "w") as f:
@@ -437,22 +407,9 @@ async def on_command_error(ctx, error):
 async def on_ready():
     global headers
 
-    # --- LOCAL TIME & STARTUP MESSAGE ---
-    ny_tz = pytz.timezone('America/New_York')
-    now = datetime.now(ny_tz)
-    t = now.strftime("%I:%M %p").lstrip('0')
-
-    startupMsgs = [
-        f"A.R.I.A. online. Local Time is now {t}. Let's get started!",
-        f"System check: all green. Time check: {t} Est. A.R.I.A.'s ready to go!",
-        f"Good day! It's {t} — A.R.I.A. here, ready to assist!",
-    ]
-    print(random.choice(startupMsgs))
-
     devRoom = bot.get_channel(HouseofGrace)
     if devRoom:
         await devRoom.send("A.R.I.A. online!")
-    print(f"{bot.user} is online and ready.")
 
     # --- PATCH NOTES ANNOUNCEMENT ---
     with PATCH_FILE.open("r", encoding="utf-8") as f:
@@ -535,9 +492,19 @@ async def on_message(message: discord.Message):
 
     if new_level > old_level:
         user_levels[user_id] = new_level
-        await message.channel.send(
-            f"🎉 Congrats {message.author.mention}, you leveled up to **Level {new_level}**!"
-        )
+
+        # Get guild ID
+        guild_id = str(message.guild.id)
+
+        # Get the level-up channel ID from settings
+        level_up_channel_id = settings.get(guild_id, {}).get("channels", {}).get("levelUpAnnouncements")
+
+        if level_up_channel_id:
+            level_up_channel = bot.get_channel(int(level_up_channel_id))
+            if level_up_channel:
+                await level_up_channel.send(
+                    f"🎉 Congrats {message.author.mention}, you leveled up to **Level {new_level}**!"
+                )
 
     # Make sure commands still work
     await bot.process_commands(message)
@@ -1254,21 +1221,6 @@ async def patchnotes(ctx: commands.Context, *, ver: str = "latest"):
 # Commands — Twitch
 # ───────────────────────────────
 
-# !!clip
-async def clip_command(ctx, username: str):
-    token = await get_app_access_token()
-    headers = {
-        "Client-ID": twitch_client_id,
-        "Authorization": f"Bearer {token}"
-    }
-
-    clip = await get_random_clip(username, headers)
-    if clip:
-        await ctx.send(f"Random clip for {username}: {clip['url']}")
-    else:
-        await ctx.send(f"No clips found for {username}.")
-
-
 # !!twitchInfo
 @bot.command(name="twitchInfo", aliases=["TwitchInfo"])
 async def twitchInfo(ctx, username: str):
@@ -1310,11 +1262,13 @@ async def twitchInfo(ctx, username: str):
     except Exception as e:
         await ctx.send(f"❌ Error fetching Twitch info: {e}")
 
+
 @bot.group(name="streamers", invoke_without_command=True)
 async def streamers(ctx):
     """Base command for managing streamers."""
     await ctx.send("Available subcommands: add, remove, list")
 
+# !!streamers add
 @streamers.command(name="add")
 async def add_streamer(ctx, streamer_name: str):
     guild_id = str(ctx.guild.id)
@@ -1330,6 +1284,7 @@ async def add_streamer(ctx, streamer_name: str):
         save_settings()
         await ctx.send(f"Added {streamer_name} to the streamers list.")
 
+# !!streamers remove
 @streamers.command(name="remove")
 async def remove_streamer(ctx, streamer_name: str):
     guild_id = str(ctx.guild.id)
@@ -1343,6 +1298,7 @@ async def remove_streamer(ctx, streamer_name: str):
     else:
         await ctx.send("No streamers list found for this server.")
 
+## !!streamers list
 @streamers.command(name="list")
 async def list_streamers(ctx):
     guild_id = str(ctx.guild.id)
@@ -1445,7 +1401,7 @@ async def setChannel(ctx: commands.Context):
 
     function = msg.content
 
-    if function not in ["1", "2", "3", "4"]:
+    if function not in ["1", "2", "3", "4", "5"]:
         await ctx.send("Invalid selection. Command cancelled.")
         return
 
